@@ -1,0 +1,29 @@
+name: Design-Änderung
+description: Ein Figma-Frame soll Code werden (oder Code soll angepasst werden).
+title: "[Design] "
+body:
+  - type: input
+    id: figma
+    attributes:
+      label: Figma-Link
+      description: Rechtsklick auf den Frame → „Copy link to selection“.
+      placeholder: https://www.figma.com/design/…?node-id=…
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Was soll sich ändern?
+      description: Ein, zwei Sätze — was sieht man danach anders?
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Fertig, wenn …
+      description: Woran erkennt man, dass es stimmt? Eine Zeile pro Punkt.
+      placeholder: |
+        - Karte zeigt das neue Bild
+        - Button ist auf dem Handy volle Breite
+    validations:
+      required: true
