@@ -1,3 +1,6 @@
+import { useState } from "react"
+
+import { Login } from "@/Login"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -45,6 +48,9 @@ const workshops: Workshop[] = [
 ]
 
 export function App() {
+  const [email, setEmail] = useState<string | null>(null)
+  if (!email) return <Login onLogin={setEmail} />
+
   return (
     <div className="mx-auto flex min-h-svh max-w-5xl flex-col gap-8 p-6">
       <header className="flex flex-col gap-1">
