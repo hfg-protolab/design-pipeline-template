@@ -6,6 +6,8 @@ durchspielen:
 - **A · Figma → Code:** Frame in Figma → Issue → Claude Code setzt um → Pull Request → Merge
 - **B · Code → Figma → Code:** Claude Code baut → Seite nach Figma holen → in Figma ändern →
   Claude Code übernimmt die Änderung → Pull Request → Merge
+- **C · Feedback → Code:** Feedback-Issue mit Beschreibung und Screenshot → Claude Code
+  schlägt eine Lösung vor (auf Wunsch erst in Figma) → setzt um → Pull Request → Merge
 
 ## Vor dem Kurs einrichten (ca. 15 Min)
 
@@ -49,6 +51,20 @@ durchspielen:
 3. In Figma die neuen Frames überarbeiten.
 4. > Übernimm meine Änderungen aus Figma: <Link zum Frame>
 5. Pull Request, Merge.
+
+## C · Feedback → Code
+
+1. Auf GitHub **Issues → New issue → Feedback**: beschreiben, was stört oder fehlt, und
+   einen Screenshot hineinziehen (gern mit Markierung).
+2. In Claude Code:
+   > Schau dir Issue #3 an.
+3. Claude liest Text und Screenshot, fasst zusammen und schlägt eine Lösung vor.
+   Passt sie nicht: nachschärfen. Lieber erst sehen?
+   > Zeig mir den Vorschlag in Figma.
+
+   Dann in Figma anpassen und wie bei **B** zurückholen.
+4. > Setz es um und mach einen Pull Request.
+5. Merge — das Issue schließt sich automatisch.
 
 ## Gut zu wissen
 

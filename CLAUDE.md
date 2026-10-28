@@ -18,6 +18,13 @@ Vite + React + TypeScript + Tailwind v4 + shadcn/ui. Start: `bun install && bun 
 
 ## Issue → PR
 
-- Read the issue with `gh issue view <n>`; the Figma link is in its body.
+- Read the issue with `gh issue view <n> --comments`; a Figma link, if any, is in its body.
+- Screenshots in the issue (`https://github.com/user-attachments/assets/…`): download every
+  one and look at it before deciding anything —
+  `curl -sSL -H "Authorization: Bearer $(gh auth token)" -o shot-1.png "<url>"` into a temp
+  folder, then read the file. The text is often only in the image.
+- A feedback issue without a Figma link: restate what is reported, propose a solution in
+  two or three sentences and ask before building. Offer to show the proposal in Figma first
+  (build it, then `generate_figma_design`) so it can be adjusted there.
 - Work on a branch `design/<n>-<short-name>`, open the PR with `Closes #<n>` in the body.
 - "Released" means merged into `main`.

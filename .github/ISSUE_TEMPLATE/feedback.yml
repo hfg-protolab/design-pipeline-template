@@ -1,0 +1,26 @@
+name: Feedback
+description: Etwas stört, fehlt oder ist unklar — beschreiben, Screenshot rein, fertig.
+title: "[Feedback] "
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Was stört oder fehlt?
+      description: So konkret wie möglich — was hast du gemacht, was ist passiert, was hättest du erwartet?
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Wo?
+      description: Seite oder Bereich, z. B. „Workshop-Karten“ oder „Anmeldung“.
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Bild hier hineinziehen oder mit Cmd+V einfügen. Gern mit Markierung, was gemeint ist.
+  - type: input
+    id: figma
+    attributes:
+      label: Figma-Link (optional)
+      description: Falls es schon einen Entwurf gibt.
